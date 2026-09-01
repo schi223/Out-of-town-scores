@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>API Link Home Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 40px;
+      background-color: #f7f7f7;
+      text-align: center;
+      /* Add background image */
+      background-image: url('https://i.ibb.co/fY9FrS5T/UK-BG.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      min-height: 100vh;
+      /* Optional: Add an overlay for readability */
+      position: relative;
+    }
+    /* Add an overlay for better contrast (optional) */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(255,255,255,0.42); /* Adjust opacity as needed */
+      z-index: 0;
+      pointer-events: none;
+    }
+    .logo {
+      max-width: 220px;
+      height: auto;
+      margin-bottom: 25px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+      z-index: 1;
+    }
+    h1, .nav-button {
+      position: relative;
+      z-index: 1;
+    }
+    .nav-button {
+      display: block;
+      width: 200px;
+      margin: 20px auto;
+      padding: 15px 0;
+      font-size: 18px;
+      background-color: #005bbb;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.2s;
+      text-decoration: none;
+    }
+    .nav-button:hover {
+      background-color: #003366;
+    }
+  </style>
+</head>
+<body>
+  <img src="https://i.ibb.co/mrVD9MdX/gbd-uk-logo.png" alt="UK Logo" class="logo">
+  <h1>2026-27 API Access Page</h1>
+  <a class="nav-button" href="ukfb26api.html">Football</a>
+  <a class="nav-button" href="ukmbb26api.html">Men's Basketball</a>
+  <a class="nav-button" href="ukwbb26api.html">Women's Basketball</a>
+  <a class="nav-button" href="page4.html">Baseball (Link coming soon)</a>
+  <a class="nav-button" href="page5.html">Softball (Link coming soon)</a>
+</body>
+</html>
