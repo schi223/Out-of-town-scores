@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women's College Basketball API</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        pre {
+            background: #333;
+            color: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            overflow-x: auto;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>26-27 Women's Basketball API</h1>
+    <pre id="api-data">Loading...</pre>
+    <script>
+        const API_URL = "https://site.api.espn.com/apis/site/v2/sports/basketball/womens-college-basketball/scoreboard?limit=500";
+        const apiDataElement = document.getElementById("api-data");
+        // Fetch and display the API data
+        async function fetchAndDisplayAPI() {
+            console.log("Fetching API data...");
+            try {
+                const response = await fetch(API_URL);
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                const data = await response.json();
+                apiDataElement.textContent = JSON.stringify(data, null, 2); // Format data as JSON
+            } catch (error) {
+                console.error("Failed to fetch API data:", error);
+                apiDataElement.textContent = "Error loading API data. Please try again later.";
+            }
+        }
+        // Fetch data initially
+        fetchAndDisplayAPI();
+        // Optionally, refresh the data every 10 seconds
+        setInterval(fetchAndDisplayAPI, 10000);
+    </script>
+</body>
+</html>
