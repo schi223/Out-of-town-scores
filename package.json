@@ -1,24 +1,9 @@
 {
   "name": "Out-of-town-scores",
   "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "private": true,
   "dependencies": {
-    "next": "^13.4.10",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
     "axios": "^1.7.9",
-    "cors": "^2.8.5",
-    "express": "^4.21.2",
-    "express-session": "^1.18.1"
+    "cors": "^2.8.5"
   }
 }
