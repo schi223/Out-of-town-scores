@@ -1,9 +1,0 @@
-{
-  "name": "Out-of-town-scores",
-  "version": "1.0.0",
-  "private": true,
-  "dependencies": {
-    "axios": "^1.7.9",
-    "cors": "^2.8.5"
-  }
-}
